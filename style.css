@@ -1,90 +1,129 @@
-body {
-	/* background-image: url(/lab-cricpro-scoreboard/assets/background-image1.png); */
-	font-family: sans-serif;
-	padding: 3%;
-	margin: auto;
-	font-size: 15px;
-	height: fit-content;
-	min-height: 48em;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+table {
+border: 1px;
+border-style: solid;
+    /* border-spacing: 2px; */
+    border-color: black;
+    background-color: whitesmoke;
+    margin: 1em;
+  }
+  body{
+    background-image: url('/lab-cricpro-scoreboard/assets/background-image1.png');
+    background-color:white;
+    width: 80%;
+    min-height: 48em;
+    margin: auto;
+    background-repeat:no-repeat;
+    background-size: 80%;
+    background-position: center;
+    font-family: Arial;
+}
+.logo1{
+    display: block;
+    margin-left: 800px;
+    padding: 15px;
+}
+h1{
+    font-size: 50px;
+    text-shadow: 4px 4px 6px gray;
+    margin: 20px;
+}
+h2{
+    font-size: 25px;
+    color: gray;
+    margin: 30px;
+}        #scoreboard {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 90%;
+      }
+    #scoreboard th {            
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: left;
+        background-color: red;
+        color: white;
+        
+      }
+      #scoreboard tr:first-child
+      {
+          background-color: #F2F2F2
+;
+    }          #scoreboard td{
+        border: 2px black;
+        padding: 8px;
+      }
+      /* change the font family and spacing as per your project font */
+.footer{
+display:flex;
+flex-direction: row;
+align-content: flex-end;
+position: relative;
+top: 50px;
+margin-left: 80px;
+font-size: 18px;
+font-family: Nunito Sans;
+font-style: normal;}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
   }
   
-  #back {
-	position: absolute;
-	z-index: -1;
-	width: 65%;
-	margin-left: 500px;
-	margin-top: 100px;
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
   }
   
-  #logo {
-	margin-left: 1100px;
-	height: 4%;
-	width: 10%;
-	padding-top: 25px;
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: #06D85F;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
   }
   
-  h1 {
-	font-size: 30px;
-	font-style: oblique;
-	text-shadow: 1px 1px 1px black;
+  @media screen and (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
   }
-  
-  h2 {
-	font-size: 17px;
-	font-weight: lighter;
-	color: rgb(124, 112, 112);
-	margin-top: -20px;
-  }
-  
-  td:nth-child(4) {
-	padding-right: 3px;
-  }
-  
-  a {
-	text-decoration: none;
-	color: skyblue;
-  }
-  
-  .head {
-	background-color: rgba(238, 26, 26, 0.753);
-	color: whitesmoke;
-  }
-  
-  .head1 {
-	text-align: left;
-  }
-  #india {
-	text-align: left;
-	justify-content: start;
-  }
-  td {
-	padding: 5px;
-  }
-  table {
-	background-color: white;
-	border: 2px;
-	border-style: solid;
-	border-color: lightgrey;
-  }
-  /* tr {
-	border: px solid black;
-	padding: 1px;
-  } */
-  
-  /* change the font family and spacing as per your project font */
-  .footer {
-	display: flex;
-	flex-direction: row;
-	align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-	font-style: normal;
-  }
-  #la{
-	position: absolute;
-	margin-top: -60%;
-  }
-  
